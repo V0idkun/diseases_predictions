@@ -1,0 +1,2 @@
+timestamp,user_id,input_type,selected_symptoms,symptom_vector,sample_count,predicted_disease,confidence,upload_filename,note
+2026-04-20T11:04:34.407341,anonymous,single,skin_peeling;blister;red_sore_around_nose,"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,1,0",1,Impetigo,96.56877517700195,,single symptom prediction

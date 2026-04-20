@@ -1,0 +1,11 @@
+[server]
+headless = true
+enableWebsocketCompression = true
+port = 8501
+
+[theme]
+primaryColor = "#4CAF50"
+backgroundColor = "#F0F2F6"
+secondaryBackgroundColor = "#FFFFFF"
+textColor = "#31333F"
+font = "sans serif"
