@@ -1,5 +1,5 @@
 streamlit==1.45.1
 tensorflow==2.21.0
 pandas==2.3.0
-numpy==1.26.4
+numpy==2.1.0
 joblib==1.5.1
