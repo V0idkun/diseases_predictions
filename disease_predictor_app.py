@@ -20,17 +20,29 @@ ADMIN_KEY = os.environ.get('DISEASE_APP_ADMIN_KEY', 'admin123')
 
 @st.cache_resource
 def load_model():
-    return tf.keras.models.load_model(os.path.join(BASE_DIR, 'disease_predictor_model.keras'))
+    model_path = os.path.join(BASE_DIR, 'disease_predictor_model.keras')
+    if not os.path.exists(model_path):
+        st.error(f"Model file not found at {model_path}")
+        raise FileNotFoundError(f"Model file not found at {model_path}")
+    return tf.keras.models.load_model(model_path)
 
 
 @st.cache_resource
 def load_label_encoder():
-    return joblib.load(os.path.join(BASE_DIR, 'label_encoder.pkl'))
+    le_path = os.path.join(BASE_DIR, 'label_encoder.pkl')
+    if not os.path.exists(le_path):
+        st.error(f"Label encoder file not found at {le_path}")
+        raise FileNotFoundError(f"Label encoder file not found at {le_path}")
+    return joblib.load(le_path)
 
 
 @st.cache_resource
 def load_metadata():
-    return joblib.load(os.path.join(BASE_DIR, 'disease_metadata.joblib'))
+    metadata_path = os.path.join(BASE_DIR, 'disease_metadata.joblib')
+    if not os.path.exists(metadata_path):
+        st.error(f"Metadata file not found at {metadata_path}")
+        raise FileNotFoundError(f"Metadata file not found at {metadata_path}")
+    return joblib.load(metadata_path)
 
 
 @st.cache_data
